@@ -1,0 +1,38 @@
+/* #region Fonts */
+/* #endregion */
+
+/* #region Variables */
+$color-primary: #fff;
+$color-secondary: #000;
+/* #endregion */
+
+/* #region Function */
+@function rem-calc($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
+/* #endregion */
+
+/* #region Global */
+  html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+  }
+  body{
+    font-family: 'Open Sans', sans-serif;
+    overflow-x:hidden;
+    position: relative;
+  }
+  *{outline: none!important;}
+/* #endregion */
+
+/* #region Typography */
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  }
+  p:last-child:not(.lead){margin-bottom: 0;}
+  a{
+    color: $color-primary;
+    &:hover{color: $color-primary;}
+  }
+/* #endregion */
